@@ -135,7 +135,7 @@ The project strictly follows:
 - RDP connection from VPN client (10.212.134.x) → Win-IT machine → **Session established**
 - FortiGate logs confirmed: `VPN-IT(14)` policy hit, port 3389, **ACCEPT**
 
-> 📸 *Screenshots: Policy configuration, RDP session active, traffic log with policy ID*
+> 📸 *Screenshots: Policy configuration (FiratCanBekar-SALES Win>IT Win), traffic log confirming RDP TCP/3389 — ACCEPT*
 
 ---
 
@@ -530,8 +530,8 @@ Every policy has logging enabled. Traffic logs were filtered per-policy to produ
 > All screenshots are included in the `/screenshots` folder of this repository.  
 > Credentials, internal IP addresses, and sensitive identifiers have been redacted for security compliance.
 
-| # | Screenshot | Description |
-|---|-----------|-------------|
+| No | Screenshot | Description |
+|----|-----------|-------------|
 | 01 | `01_policy_list_overview.png` | Full FortiGate firewall policy list |
 | 02 | `02_linux_ssh_icmp_policy.png` | SALES Linux → IT Linux policy config |
 | 03 | `03_ssh_session_verified.png` | SSH terminal session to IT Linux |
@@ -586,7 +586,7 @@ Key steps:
 ## 👨‍💼 Author
 
 **Fırat Can Bekar**  
-| Cyber Security Engineer |
+| Cyber Security Engineer | Network Security | 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/firatcan-bekar-cyber-security-engineer/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github)](https://github.com/NaphyxHub)
