@@ -3,7 +3,7 @@
 ![FortiGate](https://img.shields.io/badge/FortiGate-FortiOS%20v7.4.9-EE3124?style=for-the-badge&logo=fortinet&logoColor=white)
 ![Security](https://img.shields.io/badge/Security_Engineering-Network%20Security-blue?style=for-the-badge&logo=shield&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
-![Tasks](https://img.shields.io/badge/Tasks_Completed-16%2F16-success?style=for-the-badge)
+![Tasks](https://img.shields.io/badge/Tasks_Completed-14%2F14-success?style=for-the-badge)
 
 > **A hands-on, enterprise-grade firewall engineering project** demonstrating real-world configuration of a FortiGate Next-Generation Firewall (NGFW). Covers policy design, traffic segmentation, VPN, Virtual IP / Port Forwarding, Application Control, Web Filtering, IPS, Antivirus, and DNS Filtering — all built under a strict **Least Privilege** security model.
 
@@ -31,6 +31,19 @@
   - [14. Log Filtering per Policy](#14-log-filtering-per-policy)
 - [Key Security Principles](#-key-security-principles)
 - [Skills Demonstrated](#-skills-demonstrated)
+- [Lessons Learned](#-lessons-learned)
+
+---
+
+## 🧭 Executive Summary
+
+| | |
+|---|---|
+| **What I built** | A fully segmented enterprise firewall environment on a live FortiGate NGFW (FortiOS v7.4.9), covering 14 real-world security engineering tasks from policy design to advanced threat prevention. |
+| **Why** | To demonstrate hands-on competency in enterprise network security — the kind of work a Security Engineer does day-to-day in a corporate environment. |
+| **How validated** | Every task was verified through FortiGate traffic logs, terminal output (curl, nmap, nslookup), and live browser tests. No task is marked complete without log evidence. |
+| **Key skills** | FortiGate policy management, VPN, Virtual IP/NAT, App Control (L7), Web Filtering, IPS, Antivirus, DNS Filtering, log analysis |
+| **Environment** | Isolated lab — SALES / IT / DMZ segments + SSL-VPN. All IPs and credentials redacted in screenshots. |
 
 ---
 
@@ -560,6 +573,28 @@ Every policy has logging enabled. Traffic logs were filtered per-policy to produ
 | 26 | `26_curl_weblablocal.png` | curl http://web.lab.local → 200 OK |
 | 27 | `27_log_filtering_examples.png` | Log filtering per policy in FortiGate |
 
+
+---
+
+## 💡 Lessons Learned
+
+Working through 14 real-world FortiGate tasks surfaced several insights that go beyond textbook theory:
+
+1. **Policy order is everything**
+   Deny rules must sit *above* allow rules — a misplaced policy silently passes traffic that should be blocked. I learned to treat policy ordering as a first-class security concern, not an afterthought.
+
+2. **SSL inspection changes the game**
+   Without deep SSL/TLS inspection, Application Control and Antivirus are partially blind. Enabling certificate inspection on HTTPS traffic was the difference between blocking Instagram and watching it pass through untouched.
+
+3. **DNS is a powerful but overlooked control point**
+   Redirecting `example.com` to an internal IIS server via DNS Filter — without touching the client — showed how DNS-layer enforcement can transparently redirect or block traffic before a TCP connection is even established.
+
+4. **Logs are the ground truth**
+   Every configuration change was only considered "done" when the expected log entry appeared in FortiGate's Forward Traffic view. This habit of log-first verification is what separates a configured policy from a *proven* policy.
+
+5. **Least privilege requires active maintenance**
+   Deny policies created for testing had to be disabled afterward to prevent rule conflicts. Managing policy lifecycle — not just creation — is a real operational responsibility.
+
 ---
 
 ## 🚀 How to Reproduce This Lab
@@ -586,7 +621,7 @@ Key steps:
 ## 👨‍💼 Author
 
 **Fırat Can Bekar**  
-| Cyber Security Engineer | Network Security | 
+| Cyber Security Engineer | Network Security |
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/firatcan-bekar-cyber-security-engineer/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github)](https://github.com/NaphyxHub)
