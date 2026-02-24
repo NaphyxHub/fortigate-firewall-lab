@@ -152,8 +152,8 @@ graph TD
   - Logging: **Enabled**
 
 **Verification:**
-- VPN connected as `interns` → `ping` to IT Linux host → **ICMP replies received**
-- `ssh oaklab@[IT-Linux-IP]` → **Connection successful** (Ubuntu 22.04.5 banner confirmed)
+- VPN connected as `[VPN-user]` → `ping` to IT Linux host → **ICMP replies received**
+- `ssh [user]@[IT-Linux-IP]` → **Connection successful** (Ubuntu 22.04.5 banner confirmed)
 - FortiGate traffic logs: Source VPN IP → IT Linux destination, Policy `VPN-IT(14)` → **ACCEPT**
 
 > 📸 *Screenshots: Policy list, custom service objects, terminal SSH session, FortiGate traffic log*
