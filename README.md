@@ -5,7 +5,9 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 ![Tasks](https://img.shields.io/badge/Tasks_Completed-14%2F14-success?style=for-the-badge)
 
-> **A hands-on, enterprise-grade firewall engineering project** demonstrating real-world configuration of a FortiGate Next-Generation Firewall (NGFW). Covers policy design, traffic segmentation, VPN, Virtual IP / Port Forwarding, Application Control, Web Filtering, IPS, Antivirus, and DNS Filtering — all built under a strict **Least Privilege** security model.
+> **A hands-on, enterprise-grade firewall engineering project** demonstrating real-world configuration of a FortiGate Next-Generation Firewall (NGFW).
+
+> Covers policy design, traffic segmentation, VPN, Virtual IP / Port Forwarding, Application Control, Web Filtering, IPS, Antivirus, and DNS Filtering — all built under a strict **Least Privilege** security model.
 
 > 📄 **[View Full Presentation (PDF)](./FortiGate_Portfolio_FIRATCAN.pdf)** — slide-by-slide walkthrough of all 14 tasks with screenshots and diagrams.
 
@@ -179,6 +181,9 @@ graph TD
 > 📸 *Screenshots: Policy configuration (FiratCanBekar-SALES Win>IT Win), traffic log confirming RDP TCP/3389 — ACCEPT*
 
 ---
+
+
+> *Note: NAT behavior in this task depends on the lab routing/VPN design. Policy enforcement was validated through FortiGate policy hits and traffic logs.*
 
 ### 3. Web Server Deployment & Access Policy
 
@@ -530,7 +535,7 @@ All firewall policies specify:
 - Explicit destination address or subnet
 - Specific service/port objects
 
-### 3. Defence in Depth
+### 3. Defense in Depth
 Multiple security layers were stacked on the same traffic flows:
 - **Stateful firewall policies** → first line of defense
 - **Application Control** → layer 7 application identification
@@ -562,7 +567,7 @@ Every policy has logging enabled. Traffic logs were filtered per-policy to produ
 | **Log Analysis** | Traffic log filtering, per-policy audit, security event review |
 | **Linux Administration** | Ubuntu SSH, Python3 HTTP server, curl, nmap |
 | **Windows Server** | DNS Server role, IIS, DNS zone management |
-| **Security Principles** | Least Privilege, Defence in Depth, Zero Trust concepts |
+| **Security Principles** | Least Privilege, Defense in Depth, Zero Trust concepts |
 
 ---
 
@@ -603,6 +608,8 @@ Every policy has logging enabled. Traffic logs were filtered per-policy to produ
 
 
 ---
+
+> **Quick review:** Start with screenshots **01, 04, 07, 12, 15, 19, 21, 22, 27** for a fast technical walkthrough.
 
 ## 💡 Lessons Learned
 
@@ -646,10 +653,14 @@ Key steps:
 
 ---
 
+> *Note: FortiGuard subscription/signature availability may vary in evaluation lab environments and can affect App Control, IPS, AV, and Web Filter behavior.*
+
 ## 👨‍💼 Author
 
 **Fırat Can Bekar**  
-| Cyber Security Engineer | Network Security |
+Security Engineer | Network Security | FortiGate Administration
+
+**Target Roles:** Junior Network Security Engineer | SOC Analyst | Firewall Administrator
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/firatcan-bekar-cyber-security-engineer/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github)](https://github.com/NaphyxHub)
