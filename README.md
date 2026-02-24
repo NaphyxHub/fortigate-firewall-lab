@@ -536,7 +536,7 @@ Every policy has logging enabled. Traffic logs were filtered per-policy to produ
 | 02 | `02_linux_ssh_icmp_policy.png` | SALES Linux → IT Linux policy config |
 | 03 | `03_ssh_session_verified.png` | SSH terminal session to IT Linux |
 | 04 | `04_rdp_policy.png` | Windows RDP policy configuration |
-| 05 | `05_rdp_session_verified.png` | Active RDP session to IT Windows |
+| 05 | `05_rdp_traffic_log.png` | FortiGate traffic log confirming RDP (TCP/3389) — ACCEPT |
 | 06 | `06_web_server_ports.png` | Python3 HTTP server on ports 80/8080/9090 |
 | 07 | `07_curl_web_server.png` | curl test output from SALES client |
 | 08 | `08_vip_portforward.png` | Virtual IP & Port Forwarding config |
