@@ -7,7 +7,7 @@
 
 > **A hands-on, enterprise-grade firewall engineering project** demonstrating real-world configuration of a FortiGate Next-Generation Firewall (NGFW). Covers policy design, traffic segmentation, VPN, Virtual IP / Port Forwarding, Application Control, Web Filtering, IPS, Antivirus, and DNS Filtering — all built under a strict **Least Privilege** security model.
 
-> 📄 **[View Full Presentation (PDF)](./FortiGate_Portfolio_SAFE.pdf)** — slide-by-slide walkthrough of all 14 tasks with screenshots and diagrams.
+> 📄 **[View Full Presentation (PDF)](./FortiGate_Portfolio_FIRATCAN.pdf)** — slide-by-slide walkthrough of all 14 tasks with screenshots and diagrams.
 
 ---
 
