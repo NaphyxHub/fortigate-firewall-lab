@@ -536,29 +536,29 @@ Every policy has logging enabled. Traffic logs were filtered per-policy to produ
 | 02 | `02_linux_ssh_icmp_policy.png` | SALES Linux → IT Linux policy config |
 | 03 | `03_ssh_session_verified.png` | SSH terminal session to IT Linux |
 | 04 | `04_rdp_policy.png` | Windows RDP policy configuration |
-| 05 | `05_rdp_traffic_log.png` | FortiGate traffic log confirming RDP (TCP/3389) — ACCEPT |
-| 06 | `06_web_server_ports.png` | Python3 HTTP server on ports 80/8080/9090 |
-| 07 | `07_curl_web_server.png` | curl test output from SALES client |
-| 08 | `08_vip_portforward.png` | Virtual IP & Port Forwarding config |
-| 09 | `09_vip_curl_verified.png` | curl via VIP address confirmed |
-| 10 | `10_internet_policy_sales_it.png` | Internet access policies for SALES & IT |
-| 11 | `11_deny_example_1.1.1.1.png` | Deny policies for example.com and 1.1.1.1 |
-| 12 | `12_deny_logs.png` | FortiGate deny log entries |
-| 13 | `13_aws_block_policy.png` | IT → AWS blocking policy |
-| 14 | `14_app_control_sensor.png` | App Control sensor (Facebook/Instagram/Gmail) |
-| 15 | `15_app_control_logs.png` | Application blocked in traffic logs |
-| 16 | `16_web_filter_profile.png` | Web Filter profile with blocked categories |
-| 17 | `17_web_filter_blocked.png` | FortiGuard block page in browser |
-| 18 | `18_antivirus_profile.png` | AV profile configuration |
-| 19 | `19_eicar_blocked.png` | EICAR test file blocked (AV log) |
-| 20 | `20_ips_sensor.png` | IPS sensor configuration |
-| 21 | `21_nmap_ips_blocked.png` | Nmap scan dropped by IPS signatures |
-| 22 | `22_dns_filter_redirect.png` | DNS Filter redirecting example.com to DMZ |
-| 23 | `23_iis_redirect_verified.png` | Browser showing IIS page for example.com |
-| 24 | `24_dns_server_zone.png` | Windows Server DNS Manager — lab.local zone |
-| 25 | `25_nslookup_weblablocal.png` | nslookup web.lab.local → IT Linux IP |
-| 26 | `26_curl_weblablocal.png` | curl http://web.lab.local → 200 OK |
-| 27 | `27_log_filtering_examples.png` | Log filtering per policy in FortiGate |
+
+| 05 | `05_web_server_ports.png` | Python3 HTTP server on ports 80/8080/9090 |
+| 06 | `06_curl_web_server.png` | curl test output from SALES client |
+| 07 | `07_vip_portforward.png` | Virtual IP & Port Forwarding config |
+| 08 | `08_vip_curl_verified.png` | curl via VIP address confirmed |
+| 09 | `09_internet_policy_sales_it.png` | Internet access policies for SALES & IT |
+| 10 | `10_deny_example_1.1.1.1.png` | Deny policies for example.com and 1.1.1.1 |
+| 11 | `11_deny_logs.png` | FortiGate deny log entries |
+| 12 | `12_aws_block_policy.png` | IT → AWS blocking policy |
+| 13 | `13_app_control_sensor.png` | App Control sensor (Facebook/Instagram/Gmail) |
+| 14 | `14_app_control_logs.png` | Application blocked in traffic logs |
+| 15 | `15_web_filter_profile.png` | Web Filter profile with blocked categories |
+| 16 | `16_web_filter_blocked.png` | FortiGuard block page in browser |
+| 17 | `17_antivirus_profile.png` | AV profile configuration |
+| 18 | `18_eicar_blocked.png` | EICAR test file blocked (AV log) |
+| 19 | `19_ips_sensor.png` | IPS sensor configuration |
+| 20 | `20_nmap_ips_blocked.png` | Nmap scan dropped by IPS signatures |
+| 21 | `21_dns_filter_redirect.png` | DNS Filter redirecting example.com to DMZ |
+| 22 | `22_iis_redirect_verified.png` | Browser showing IIS page for example.com |
+| 23 | `23_dns_server_zone.png` | Windows Server DNS Manager — lab.local zone |
+| 24 | `24_nslookup_weblablocal.png` | nslookup web.lab.local → IT Linux IP |
+| 25 | `25_curl_weblablocal.png` | curl http://web.lab.local → 200 OK |
+| 26 | `26_log_filtering_examples.png` | Log filtering per policy in FortiGate |
 
 ---
 
@@ -586,7 +586,7 @@ Key steps:
 ## 👨‍💼 Author
 
 **Fırat Can Bekar**  
-Cyber Security Engineer 
+| Cyber Security Engineer |
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/firatcan-bekar-cyber-security-engineer/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github)](https://github.com/NaphyxHub)
